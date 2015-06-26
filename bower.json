@@ -1,0 +1,27 @@
+{
+  "name": "carma-wordpress",
+  "version": "1.0.0",
+  "homepage": "https://github.com/luckyluke007/carma-wp-theme",
+  "authors": [
+    "LuckyLuke007 <trung@scgstudio.com>"
+  ],
+  "description": "Carma Weight Loss",
+  "main": "index.php",
+  "keywords": [
+    "carma"
+  ],
+  "dependencies": {
+    "normalize-css": "2.1.3",
+    "bourbon": "4.2.3",
+    "neat": "1.7.2",
+    "flexnav": "1.3.3"
+    },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
