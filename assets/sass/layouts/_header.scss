@@ -1,6 +1,9 @@
 .site-branding {
+	display: block;
+	@include span-columns(12);
+	margin: 0 auto 0 auto;
 	text-align: center;
-
+	background: $light-yellow;
 	.site-title {
 		font-family: $title;
 		padding: 40px;

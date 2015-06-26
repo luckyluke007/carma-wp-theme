@@ -1098,7 +1098,17 @@ body {
 6.1 Layout and Structure
 --------------------------------------------------------------*/
 .site-branding {
+  display: block;
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 100%;
+  margin: 0 auto 0 auto;
   text-align: center;
+  background: #FFF6BF;
+}
+.site-branding:last-child {
+  margin-right: 0;
 }
 .site-branding .site-title {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
