@@ -10,13 +10,13 @@
 		padding: 40px;
 		font-family: "great_vibesregular", Times New Roman, Times, serif;
 		@include media($sm) {
-			@include fontSize(35px);
+			font-size: $h1-font-size;
 		}
 		@include media($smbg) {
-			@include fontSize(55px);
+			font-size: $h1-font-size;
 		}
 		@include media($md) {
-			@include fontSize(75px);
+			font-size: $h1-font-size;
 		}
 
 		a,a:visited {

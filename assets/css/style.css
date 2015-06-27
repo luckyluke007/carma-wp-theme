@@ -1125,20 +1125,17 @@ body {
 }
 @media screen and (min-width: 200px) {
   .site-branding .site-title {
-    font-size: 35px;
-    font-size: 2.1875rem;
+    font-size: 2.25em;
   }
 }
 @media screen and (min-width: 480px) {
   .site-branding .site-title {
-    font-size: 55px;
-    font-size: 3.4375rem;
+    font-size: 2.25em;
   }
 }
 @media screen and (min-width: 768px) {
   .site-branding .site-title {
-    font-size: 75px;
-    font-size: 4.6875rem;
+    font-size: 2.25em;
   }
 }
 .site-branding .site-title a, .site-branding .site-title a:visited {
