@@ -1111,7 +1111,6 @@ body {
   margin-right: 2.12766%;
   width: 100%;
   margin: 0 auto 0 auto;
-  text-align: center;
   background: #FFF6BF;
   height: 121px;
 }
@@ -1125,7 +1124,7 @@ body {
 }
 @media screen and (min-width: 200px) {
   .site-branding .site-title {
-    font-size: 2.25em;
+    font-size: 1.125em;
   }
 }
 @media screen and (min-width: 480px) {
