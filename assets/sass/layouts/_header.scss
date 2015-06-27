@@ -4,10 +4,11 @@
 	margin: 0 auto 0 auto;
 	text-align: center;
 	background: $light-yellow;
+	height: 121px;
 	.site-title {
 		font-family: $title;
 		padding: 40px;
-
+		font-family: "great_vibesregular", Times New Roman, Times, serif;
 		@include media($sm) {
 			@include fontSize(35px);
 		}

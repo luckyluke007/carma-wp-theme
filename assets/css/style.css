@@ -80,6 +80,13 @@ body {
   line-height: 1.5;
 }
 
+@font-face {
+  font-family: 'great_vibesregular';
+  src: url("fonts/greatvibes-regular-webfont.eot");
+  src: url("fonts/sgreatvibes-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/greatvibes-regular-webfont.woff2") format("woff2"), url("fonts/greatvibes-regular-webfont.woff") format("woff"), url("fonts/greatvibes-regular-webfont.ttf") format("truetype"), url("fonts/greatvibes-regular-webfont.svg#great_vibesregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 h1,
 h2,
 h3,
@@ -1106,6 +1113,7 @@ body {
   margin: 0 auto 0 auto;
   text-align: center;
   background: #FFF6BF;
+  height: 121px;
 }
 .site-branding:last-child {
   margin-right: 0;
@@ -1113,6 +1121,7 @@ body {
 .site-branding .site-title {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   padding: 40px;
+  font-family: "great_vibesregular", Times New Roman, Times, serif;
 }
 @media screen and (min-width: 200px) {
   .site-branding .site-title {

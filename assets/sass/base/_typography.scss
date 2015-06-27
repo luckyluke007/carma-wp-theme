@@ -7,6 +7,19 @@ body {
   line-height: $base-line-height;
 }
 
+@font-face {
+        font-family: 'great_vibesregular';
+        src: url('fonts/greatvibes-regular-webfont.eot');
+        src: url('fonts/sgreatvibes-regular-webfont.eot?#iefix') format('embedded-opentype'),
+             url('fonts/greatvibes-regular-webfont.woff2') format('woff2'),
+             url('fonts/greatvibes-regular-webfont.woff') format('woff'),
+             url('fonts/greatvibes-regular-webfont.ttf') format('truetype'),
+             url('fonts/greatvibes-regular-webfont.svg#great_vibesregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+
+}
+
 h1,
 h2,
 h3,
