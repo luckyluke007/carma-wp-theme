@@ -100,7 +100,7 @@ h6 {
 }
 
 h1 {
-  font-size: 2.25em;
+  font-size: 2.75em;
 }
 
 h2 {
@@ -1119,26 +1119,23 @@ body {
 }
 .site-branding .site-title {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  padding: 40px;
+  padding: 35px 0;
   font-family: "great_vibesregular", Times New Roman, Times, serif;
 }
 @media screen and (min-width: 200px) {
   .site-branding .site-title {
-    font-size: 1.125em;
+    font-size: 1.375em;
   }
 }
 @media screen and (min-width: 480px) {
   .site-branding .site-title {
-    font-size: 2.25em;
+    font-size: 2.75em;
   }
 }
 @media screen and (min-width: 768px) {
   .site-branding .site-title {
-    font-size: 2.25em;
+    font-size: 2.75em;
   }
-}
-.site-branding .site-title a, .site-branding .site-title a:visited {
-  line-height: 1;
 }
 .site-branding .site-description {
   padding: 25px 0;

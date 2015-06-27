@@ -6,7 +6,7 @@
 	height: 121px;
 	.site-title {
 		font-family: $title;
-		padding: 40px;
+		padding: 35px 0;
 		font-family: "great_vibesregular", Times New Roman, Times, serif;
 		@include media($sm) {
 			font-size: $h1-font-size/2;
@@ -18,9 +18,9 @@
 			font-size: $h1-font-size;
 		}
 
-		a,a:visited {
-			line-height: 1;
-		}
+		//a,a:visited {
+			//line-height: 1;
+		//}
 
 	}
 
