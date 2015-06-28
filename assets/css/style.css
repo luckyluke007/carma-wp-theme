@@ -1091,16 +1091,15 @@ body {
   float: left;
   display: block;
   margin-right: 2.12766%;
-  width: 48.93617%;
+  width: 100%;
   margin: 0 auto 0 auto;
-  background: #FFF6BF;
+  background: #fff;
   height: 121px;
 }
 .site-branding:last-child {
   margin-right: 0;
 }
 .site-branding .site-title {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   padding: 35px 0;
   font-family: "great_vibesregular", Times New Roman, Times, serif;
 }

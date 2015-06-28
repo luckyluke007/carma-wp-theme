@@ -181,7 +181,7 @@ gulp.task('buildImages', function() {
 
 gulp.task('copyfiles', function() {
    gulp.src('./*')
-   .pipe(gulp.dest('../carma/wp_content/themes/scg_studio/'));
+   .pipe(gulp.dest('../carma/wp-content/themes/scg_studio'));
 });
 
 // ==== TASKS ==== //

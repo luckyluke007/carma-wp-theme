@@ -1,11 +1,10 @@
 .site-branding {
 	display: block;
-	@include span-columns(6);
+	@include span-columns(12);
 	margin: 0 auto 0 auto;
-	background: $light-yellow;
+	background: $white;
 	height: 121px;
 	.site-title {
-		font-family: $title;
 		padding: 35px 0;
 		font-family: "great_vibesregular", Times New Roman, Times, serif;
 		@include media($sm) {
