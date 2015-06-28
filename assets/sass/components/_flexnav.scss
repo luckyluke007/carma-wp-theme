@@ -68,11 +68,11 @@ $fourth_level: #999;
 		white-space: nowrap;
 
 		&:hover {
-			background: #fff;
-			color: $primary-color !important;
+			/*background: #fff;*/
+			color: $magenta !important;
 		}
 		 &:focus {
-		 	background: #fff;
+		 	/*background: #fff;*/
 		 }
 	}
 	li ul {
@@ -208,10 +208,10 @@ $fourth_level: #999;
 			width: auto; /* 25% */
 		}
 		li a {
-			border-bottom: 1px solid #acaca1;
-			border-left: 1px solid #acaca1;
-			border-right: 1px solid #acaca1;
-			border-top: 1px solid #acaca1;
+			/*border-bottom: 1px solid #acaca1;*/
+			/*border-left: 1px solid #acaca1;*/
+			/*border-right: 1px solid #acaca1;*/
+			border-top: 2px solid $magenta;
 		}
 		li > ul {
 			position: absolute;

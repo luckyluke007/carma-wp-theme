@@ -1230,11 +1230,11 @@ body {
   white-space: nowrap;
 }
 .flexnav li a:hover {
-  background: #fff;
-  color: #ff0000 !important;
+  /*background: #fff;*/
+  color: #de477c !important;
 }
 .flexnav li a:focus {
-  background: #fff;
+  /*background: #fff;*/
 }
 .flexnav li ul {
   display: none;
@@ -1364,10 +1364,10 @@ body {
     /* 25% */
   }
   .flexnav li a {
-    border-bottom: 1px solid #acaca1;
-    border-left: 1px solid #acaca1;
-    border-right: 1px solid #acaca1;
-    border-top: 1px solid #acaca1;
+    /*border-bottom: 1px solid #acaca1;*/
+    /*border-left: 1px solid #acaca1;*/
+    /*border-right: 1px solid #acaca1;*/
+    border-top: 2px solid #de477c;
   }
   .flexnav li > ul {
     position: absolute;
