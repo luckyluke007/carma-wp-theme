@@ -69,6 +69,20 @@ ul.nav-menu li.current_page_item {
 	float: left;
 	max-width: 100%;
 	width: 100%;
+	@include media($sm) {
+		position: none;
+	}
+	@include media($smbg) {
+		position: none;
+	}
+	@include media($md) {
+		position: absolute;
+		top: 5.5em;
+	}
+	@include media($hg) {
+		position: absolute;
+		top: 5.5em;
+	}
 }
 
 .nav-links a:nth-of-type(2) {

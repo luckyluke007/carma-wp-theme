@@ -1,6 +1,6 @@
 /* Flexnav Base Styles */
 
-$nav_text: #fff;
+$nav_text: #baaf73;
 $top_level: #000;
 $second_level: #333;
 $third_level: #666;
@@ -63,7 +63,7 @@ $fourth_level: #999;
 		z-index: 2;
 		overflow: hidden;
 		color: $nav_text;
-		background: $top_level;
+		/*background: $top_level;*/
 		border-bottom: 1px solid rgba(0,0,0,.15);
 		white-space: nowrap;
 
@@ -131,7 +131,7 @@ $fourth_level: #999;
 	position: relative;
 	display: block;
 	padding: 1em;
-	background: $top_level;
+	background: $nav_text;
 	color: $nav_text;
 	cursor: pointer;
 	border-bottom: 1px solid rgba(0,0,0,.2);
@@ -203,9 +203,9 @@ $fourth_level: #999;
 			list-style: none;
 			float: left;
 			display: block;
-			background-color: $top_level;
+			/*background-color: $top_level;*/
 			overflow: visible;
-			width: 25%;
+			width: auto; /* 25% */
 		}
 		li a {
 			border-bottom: 1px solid #acaca1;
@@ -268,8 +268,8 @@ $fourth_level: #999;
 			list-style: none;
 			float: left;
 			display: block;
-			background-color: $top_level;
-      width: 20%;
+			/*background-color: $top_level;*/
+      		width: auto;
 			min-height: 50px;
 			overflow: visible;
 		}
