@@ -1139,6 +1139,7 @@ body {
 }
 .site-branding .site-description {
   padding: 25px 0;
+  display: hidden;
   font-size: 20px;
   font-size: 1.25rem;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
@@ -1180,6 +1181,26 @@ body {
 }
 .flexnav ul {
   padding-left: 0;
+}
+@media screen and (min-width: 200px) {
+  .flexnav ul {
+    float: center;
+  }
+}
+@media screen and (min-width: 480px) {
+  .flexnav ul {
+    float: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .flexnav ul {
+    float: right;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .flexnav ul {
+    float: right;
+  }
 }
 .flexnav.flexnav-show {
   max-height: 2000px;

@@ -22,6 +22,18 @@ $fourth_level: #999;
 
 	ul {
 		padding-left: 0;
+		@include media($sm){
+			float: center;
+		}
+		@include media($smbg){
+			float: center;
+		}
+		@include media($md){
+			float: right;
+		}
+		@include media($hg){
+			float: right;
+		}
 	}
 
 	&.flexnav-show {
