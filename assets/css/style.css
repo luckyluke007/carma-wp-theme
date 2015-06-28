@@ -1093,7 +1093,7 @@ body {
   margin-right: 2.12766%;
   width: 100%;
   margin: 0 auto 0 auto;
-  background: #fff;
+  background: #FFF6BF;
   height: 121px;
 }
 .site-branding:last-child {
@@ -1556,7 +1556,7 @@ ul.nav-menu li.current_page_item {
 @media screen and (min-width: 1140px) {
   #primary-nav {
     position: absolute;
-    top: 5.5em;
+    top: 5.3em;
   }
 }
 
