@@ -180,8 +180,8 @@ gulp.task('buildImages', function() {
 });
 
 gulp.task('copy', function() {
-   gulp.src('./*')
-   .pipe(gulp.dest('./*'));
+   gulp.src('/*')
+   .pipe(gulp.dest(pkg.directories.lib+pkg.name+'/*'));
 });
 
 // ==== TASKS ==== //
