@@ -199,15 +199,13 @@ label abbr {
 textarea,
 input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
 select[multiple=multiple] {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: border-color;
   transition: border-color;
   background-color: white;
   border-radius: 3px;
   border: 1px solid #DDD;
-  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
-          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1em;
   margin-bottom: 0.75em;
@@ -223,8 +221,7 @@ textarea:focus,
 input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
 select[multiple=multiple]:focus {
   border-color: #477DCA;
-  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
-          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
   outline: none;
 }
 
@@ -328,7 +325,6 @@ input[type="submit"] {
 }
 
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -471,8 +467,7 @@ dfn {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
 }
 
@@ -656,8 +651,7 @@ html input[disabled] {
  */
 input[type="checkbox"],
 input[type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -671,7 +665,6 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box;
 }
@@ -860,8 +853,7 @@ a:hover, a:visited:hover {
   background: #000;
   border: solid 5px #555;
   border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   clear: both;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   margin: 10px 0;
@@ -873,8 +865,7 @@ a:hover, a:visited:hover {
   background: black;
   border: solid 5px #222222;
   border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   padding: 20px;
 }
@@ -882,8 +873,7 @@ a:hover, a:visited:hover {
   background: black;
   border: solid 5px #222222;
   border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   padding: 20px;
 }
@@ -895,8 +885,7 @@ a:hover, a:visited:hover {
   background: #ffffff;
   border: solid 5px #ccc;
   border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   clear: both;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   margin: 10px 0;
@@ -908,8 +897,7 @@ a:hover, a:visited:hover {
   background: #f2f2f2;
   border: solid 5px #999999;
   border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   padding: 20px;
 }
@@ -917,8 +905,7 @@ a:hover, a:visited:hover {
   background: #f2f2f2;
   border: solid 5px #999999;
   border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   padding: 20px;
 }
@@ -945,8 +932,7 @@ a:hover, a:visited:hover {
   border-left: solid 3px #999999;
   border-bottom: solid 3px #999999;
   border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   padding: 20px;
 }
@@ -957,8 +943,7 @@ a:hover, a:visited:hover {
   border-left: solid 3px #999999;
   border-bottom: solid 3px #999999;
   border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   padding: 20px;
 }
@@ -967,8 +952,7 @@ input[type="submit"] {
   background: #000;
   border: solid 5px #555;
   border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   clear: both;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   margin: 10px 0;
@@ -982,8 +966,7 @@ input[type="submit"]:focus {
   background: black;
   border: solid 5px #222222;
   border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   padding: 20px;
 }
@@ -991,8 +974,7 @@ input[type="submit"]:hover {
   background: black;
   border: solid 5px #222222;
   border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   padding: 20px;
 }
@@ -1109,7 +1091,7 @@ body {
   float: left;
   display: block;
   margin-right: 2.12766%;
-  width: 100%;
+  width: 48.93617%;
   margin: 0 auto 0 auto;
   background: #FFF6BF;
   height: 121px;
@@ -1170,6 +1152,7 @@ body {
 /* Flexnav Base Styles */
 .flexnav {
   overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   margin: 0 auto;
   width: 100%;
   max-height: 0;
@@ -1367,7 +1350,7 @@ body {
     /*border-bottom: 1px solid #acaca1;*/
     /*border-left: 1px solid #acaca1;*/
     /*border-right: 1px solid #acaca1;*/
-    border-top: 2px solid #de477c;
+    /*border-top: 2px solid $magenta;*/
   }
   .flexnav li > ul {
     position: absolute;
@@ -1501,8 +1484,7 @@ body {
 }
 
 .main-navigation ul ul {
-  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   display: none;
   float: left;
   left: 0;
@@ -1972,6 +1954,5 @@ footer .footer-right:last-child {
   color: #21759b;
   background-color: #f1f1f1;
   border-radius: 3px;
-  -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-          box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 }

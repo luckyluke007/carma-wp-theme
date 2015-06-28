@@ -1,12 +1,12 @@
 {
-    "directories": {
+  "directories": {
     "lib": "../carma/wp-content/themes/scg_studio"
   },
   "devDependencies": {
     "bower": "^1.3.5",
     "browser-sync": "^1.3.6",
     "gulp": "^3.8.8",
-    "gulp-autoprefixer": "0.0.8",
+    "gulp-autoprefixer": "^2.3.1",
     "gulp-cache": "^0.2.0",
     "gulp-changed": "^1.2.1",
     "gulp-clean": "^0.3.1",
