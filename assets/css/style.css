@@ -1099,6 +1099,13 @@ body {
 .site-branding:last-child {
   margin-right: 0;
 }
+.site-branding .logo {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  max-width: 121px;
+}
 .site-branding .site-title {
   padding: 35px 0;
   font-family: "great_vibesregular", Times New Roman, Times, serif;
