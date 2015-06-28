@@ -1,6 +1,6 @@
 .site-branding {
 	display: block;
-	@include span-columns(12);
+	@include span-columns(10);
 	margin: 0 auto 0 auto;
 	background: $light-yellow;
 	height: 121px;

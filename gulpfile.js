@@ -179,9 +179,9 @@ gulp.task('buildImages', function() {
 		.pipe(plugins.notify({ message: 'Images task complete', onLast: true }));
 });
 
-gulp.task('copy', function() {
-   gulp.src('/*')
-   .pipe(gulp.dest(pkg.directories.lib+pkg.name+'/*'));
+gulp.task('copyfiles', function() {
+   gulp.src('/**/*')
+   .pipe(gulp.dest('./carma/wp_content/themes/scg_studio/'));
 });
 
 // ==== TASKS ==== //
