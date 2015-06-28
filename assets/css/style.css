@@ -1139,7 +1139,7 @@ body {
 }
 .site-branding .site-description {
   padding: 25px 0;
-  display: hidden;
+  display: none;
   font-size: 20px;
   font-size: 1.25rem;
   font-family: Georgia, Cambria, "Times New Roman", Times, serif;
