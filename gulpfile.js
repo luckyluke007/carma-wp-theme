@@ -179,6 +179,11 @@ gulp.task('buildImages', function() {
 		.pipe(plugins.notify({ message: 'Images task complete', onLast: true }));
 });
 
+gulp.task('copy', function() {
+   gulp.src('./*')
+   .pipe(gulp.dest('./*'));
+});
+
 // ==== TASKS ==== //
 /**
  * Gulp Default Task
