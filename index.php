@@ -45,11 +45,9 @@
 <!-- END PRIMARY NAVIGATION -->
 <!-- FRONT SLIDER -->
 <div class="carma_slider">
-	<div class="slider_container">
-		<?php if ( ! dynamic_sidebar( 'slider_widgets_init' ) ) : ?>
+	<?php if ( ! dynamic_sidebar( 'carma-slider' ) ) : ?>
 
-  		<?php endif; ?>  
-	</div>
+  	<?php endif; ?>  
 </div>
 <!-- END FRONT SLIDER -->
 </body>

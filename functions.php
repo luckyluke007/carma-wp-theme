@@ -152,8 +152,8 @@ endif;
 if ( !function_exists('slider_widgets_init') ) :
 	function slider_widgets_init() {
 		register_sidebar( array(
-			'name'          => __( 'Slider', 'slider' ),
-			'id'            => 'sidebar-1',
+			'name'          => __( 'carma-slider', 'slider' ),
+			'id'            => 'slider_container',
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h4 class="widget-title">',
