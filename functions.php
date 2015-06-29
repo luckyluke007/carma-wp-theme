@@ -149,6 +149,21 @@ if ( !function_exists('digistarter_widgets_init') ) :
 	add_action( 'widgets_init', 'digistarter_widgets_init' );
 endif;
 
+if ( !function_exists('slider_widgets_init') ) :
+	function slider_widgets_init() {
+		register_sidebar( array(
+			'name'          => __( 'Slider', 'slider' ),
+			'id'            => 'sidebar-1',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h4 class="widget-title">',
+			'after_title'   => '</h4>',
+		) );
+	}
+	add_action( 'widgets_init', 'slider_widgets_init' );
+endif;
+
+
 /**
  * Initializing Flexnav Menu System
  */

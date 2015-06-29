@@ -1,0 +1,13 @@
+/* CARMA */
+
+.carma_slider {
+	display:block;
+	width: 100%;
+	height: 121px;
+	background: $light-yellow;
+}
+.slider_container {
+	@include outer-container();
+	margin: 0 auto 0 auto;
+}
+
