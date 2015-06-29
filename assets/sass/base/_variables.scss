@@ -1,5 +1,5 @@
 // Typography
-$sans-serif: $helvetica;
+$sans-serif: "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
 $serif: $georgia;
 $base-font-family: $sans-serif;
 $header-font-family: $base-font-family;
@@ -32,6 +32,7 @@ $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
 $magenta: #de477c;
 $white: #fff;
+$light-till-green: #ddd4a1;
 
 // Background Color
 $base-background-color: white;

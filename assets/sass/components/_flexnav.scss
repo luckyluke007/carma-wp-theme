@@ -8,9 +8,9 @@ $fourth_level: #999;
 
 .flexnav {
 	overflow: hidden;
-	font-family: $helvetica;
+	font-family: $sans-serif;
 	margin: 0 auto;
-	width: 100%;
+	width:100%;
 	max-height: 0;
 	-webkit-transition: all .5s ease-in-out, width 0, height 0, top 0, left 0;
 	-moz-transition: all .5s ease-in-out;
@@ -53,9 +53,12 @@ $fourth_level: #999;
 	}
 
 	li {
-		font-size: 100%;
+		font-size: .8em;
+		text-transform: uppercase;
 		position: relative;
 		overflow: hidden;
+		text-align: center;
+		font-weight: 500;
 	}
 	li a {
 		position: relative;
@@ -64,10 +67,25 @@ $fourth_level: #999;
 		z-index: 2;
 		overflow: hidden;
 		color: $nav_text;
-		/*background: $top_level;*/
+		background: none;
 		/*border-bottom: 1px solid rgba(0,0,0,.15);*/
 		white-space: nowrap;
-
+			@include media($sm){
+				color: $white;
+				background: $light-till-green;
+			}
+			@include media($smbg){
+				color: $white;
+				background: $light-till-green;
+			}
+			@include media($md){
+				color: $nav_text;
+				background: none;
+			}
+			@include media($hg){
+				color: $nav_text;
+				background: none;
+			}
 		&:hover {
 			/*background: #fff;*/
 			color: $magenta !important;
@@ -132,8 +150,8 @@ $fourth_level: #999;
 	position: relative;
 	display: block;
 	padding: 1em;
-	background: $nav_text;
-	color: $nav_text;
+	background: $magenta;
+	color: $white;
 	cursor: pointer;
 	border-bottom: 1px solid rgba(0,0,0,.2);
 	width: 100%;
@@ -203,6 +221,7 @@ $fourth_level: #999;
 			position: relative;
 			list-style: none;
 			float: left;
+			text-align: center;
 			display: block;
 			/*background-color: $top_level;*/
 			overflow: visible;

@@ -21,7 +21,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php /*body_class();*/ ?>>
 <?php tha_body_top(); ?>
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'digistarter' ); ?></a>
@@ -29,11 +29,13 @@
 		<?php tha_header_before(); ?>
 		<header id="masthead" class="site-header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
 			<?php tha_header_top(); ?>
-			<div class="site-branding">
-			<div class="logo"><img src="http://www.scgstudio.com/images/flowers.png"></div>
-				<div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>
-				<div class="site-description"><?php bloginfo( 'description' ) ?></div>
-			</div>
+			
+				<div class="site-branding">
+				<div class="logo"><img src="http://www.scgstudio.com/images/flowers.png"></div>
+					<div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>
+					<div class="site-description"><?php bloginfo( 'description' ) ?></div>
+				</div>
+			
 
 			<nav id="primary-nav" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 				<button class="menu-button">

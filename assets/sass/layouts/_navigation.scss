@@ -1,3 +1,28 @@
+/* CARMA */
+.carma-navigation {
+	@include outer-container();
+	margin: 0 auto 0 auto;
+	.navigation {
+		right: 0;
+		top: 4em;
+		display: block;
+		@include media($sm) {
+			position: none;
+		}
+		@include media($smbg) {
+			position: none;
+		}
+		@include media($md) {
+			position: absolute;
+		}
+		@include media($hg) {
+			position: absolute;
+		}
+	}
+}
+
+
+/* END CARMA */
 /* =Menu
 ----------------------------------------------- */
 
@@ -66,9 +91,8 @@ ul.nav-menu li.current_page_item {
 }
 
 #primary-nav {
-	float: left;
-	max-width: 100%;
-	width: 100%;
+	@include span-columns(12);
+	margin: 0 auto 0 auto;
 	@include media($sm) {
 		position: none;
 	}
@@ -77,14 +101,18 @@ ul.nav-menu li.current_page_item {
 	}
 	@include media($md) {
 		position: absolute;
-		top: 5.3em;
+		top: 3.75em;
 	}
 	@include media($hg) {
 		position: absolute;
-		top: 5.3em;
+		top: 3.75em;
 	}
 }
 
 .nav-links a:nth-of-type(2) {
 	float: right;
 }
+
+
+
+
