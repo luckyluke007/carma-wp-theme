@@ -265,6 +265,21 @@ if ( !function_exists('digistarter_add_footer_divs') ) :
 add_action( 'tha_footer_bottom', 'digistarter_add_footer_divs' );
 endif;
 
+function example_theme_js() {
+wp_enqueue_script('jquery');
+//master slider js
+wp_enqueue_script('jquery-1.10.2', get_template_directory_uri() .'/js/jquery-1.10.2.min.js','','', false);
+wp_enqueue_script('select', get_template_directory_uri() .'/js/select.js', true);
+wp_enqueue_script('jquery.easing.min', get_template_directory_uri() .'/js/jquery.easing.min.js','','', false);
+wp_enqueue_script('masterslider.flickr.min', get_template_directory_uri() .'/js/masterslider.flickr.min.js','','', false);
+wp_enqueue_script('masterslider', get_template_directory_uri() .'/js/masterslider.js','','', false);
+wp_enqueue_script('masterlider.map', get_template_directory_uri() .'/js/masterlider.map','','', false);
+wp_enqueue_script('masterslider.min', get_template_directory_uri() .'/js/masterslider.min.js','','', false);
+wp_enqueue_script('jquery.ui.totop', get_template_directory_uri() .'/js/jquery.ui.totop.js', false);
+wp_enqueue_script('public', get_template_directory_uri() .'/js/public.js', false);
+
+}
+
 add_action( 'tha_head_bottom', 'digistarter_add_selectivizr' );
 function digistarter_add_selectivizr() { ?>
 	<!--[if (gte IE 6)&(lte IE 8)]>

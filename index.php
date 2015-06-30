@@ -19,6 +19,8 @@
 
 	<?php tha_head_bottom(); ?>
 	<?php wp_head(); ?>
+
+	<script src="http://carmaweightloss.net.site/wp-content/themes/scg_studio/assets/js/vendor/masterslider.min.js"></script>
 </head>
 <body>
 <div class="carma_header">
@@ -46,7 +48,7 @@
 <!-- FRONT SLIDER -->
 <div class="carma_slider">
 	<?php if ( ! dynamic_sidebar( 'carma-slider' ) ) : ?>
-
+		<?php masterslider(1); ?>
   	<?php endif; ?>  
 </div>
 <!-- END FRONT SLIDER -->
