@@ -12,7 +12,7 @@
 <head>
 	<?php tha_head_top(); ?>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0" name="viewport"/>
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -52,6 +52,12 @@
   	<?php endif; ?>  
 </div>
 <!-- END FRONT SLIDER -->
+<div class="carma-magenta">
+	<div class="carma-home-container">
+		<div class="home-loss-box"><img src="http://carmaweightloss.net.site/wp-content/themes/scg_studio/assets/js/vendor/weight-loss-icon.png" alt="Weight Loss"></div>
+		<div class="home-body-box"><img src="http://carmaweightloss.net.site/wp-content/themes/scg_studio/assets/js/vendor/bodyworks-icon.png" alt="Bodyworks"></div>
+	</div>
+</div>
 </body>
 <html>
 

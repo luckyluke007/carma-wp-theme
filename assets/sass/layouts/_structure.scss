@@ -61,3 +61,87 @@ body {
 	display: block;
 	width: 100%;
 }
+
+.carma-magenta {
+	display: block;
+	width: 100%;
+	height:600px;
+	background: $magenta;
+	padding-top: .35em;
+	margin: -7px 0 0 0;
+	@include media($sm) {
+		position: none;
+	}
+	@include media($smbg) {
+		position: none;
+	}
+	@include media($md) {
+		position: none;
+	}
+	@include media($hg) {
+		position: absolute;
+	}
+	.carma-home-container {
+		display: block;
+		@include outer-container();
+		margin: .35em auto 0 auto;
+		border-top: .10em dotted $white;
+		height:600px;
+		.home-loss-box {
+			display: block;
+			@include media($smbg){
+				@include fill-parent();
+			}
+			@include media($md){
+				@include span-columns(6);
+			}
+			@include media($hg){
+				@include span-columns(6);
+			}
+			img {
+				display: block;
+				margin: -2em auto 0 auto;
+				@include media($sm) {
+					margin: 0 auto 0 auto;
+				}
+				@include media($smbg) {
+					margin: 0 auto 0 auto;
+				}
+				@include media($md) {
+					margin: 0 auto 0 auto;
+				}
+				@include media($hg) {
+					margin: -2em auto 0 auto;
+				}
+			}
+		}
+
+		.home-body-box {
+			display: block;
+			@include media($smbg){
+				@include fill-parent();
+			}
+			@include media($md){
+				@include span-columns(6);
+			}
+			@include media($hg){
+				@include span-columns(6);
+			}
+			img {
+				display: block;
+				@include media($sm) {
+					margin: 0 auto 0 auto;
+				}
+				@include media($smbg) {
+					margin: 0 auto 0 auto;
+				}
+				@include media($md) {
+					margin: 0 auto 0 auto;
+				}
+				@include media($hg) {
+					margin: -2em auto 0 auto;
+				}
+		  }
+	   }
+	}
+}

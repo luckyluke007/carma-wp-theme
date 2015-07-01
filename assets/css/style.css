@@ -1149,6 +1149,156 @@ body {
   width: 100%;
 }
 
+.carma-magenta {
+  display: block;
+  width: 100%;
+  height: 600px;
+  background: #de477c;
+  padding-top: .35em;
+  margin: -7px 0 0 0;
+}
+@media screen and (min-width: 200px) {
+  .carma-magenta {
+    position: none;
+  }
+}
+@media screen and (min-width: 480px) {
+  .carma-magenta {
+    position: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .carma-magenta {
+    position: none;
+  }
+}
+@media screen and (min-width: 1088px) {
+  .carma-magenta {
+    position: absolute;
+  }
+}
+.carma-magenta .carma-home-container {
+  display: block;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin: .35em auto 0 auto;
+  border-top: 0.1em dotted #fff;
+  height: 600px;
+}
+.carma-magenta .carma-home-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.carma-magenta .carma-home-container .home-loss-box {
+  display: block;
+}
+@media screen and (min-width: 480px) {
+  .carma-magenta .carma-home-container .home-loss-box {
+    /*width: 100%;*/
+  }
+}
+@media screen and (min-width: 768px) {
+  .carma-magenta .carma-home-container .home-loss-box {
+    float: left;
+    display: block;
+    margin-right: 4.34783%;
+    width: 100%;
+  }
+  .carma-magenta .carma-home-container .home-loss-box:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1088px) {
+  .carma-magenta .carma-home-container .home-loss-box {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 48.93617%;
+  }
+  .carma-magenta .carma-home-container .home-loss-box:last-child {
+    margin-right: 0;
+  }
+}
+.carma-magenta .carma-home-container .home-loss-box img {
+  display: block;
+  margin: -2em auto 0 auto;
+}
+@media screen and (min-width: 200px) {
+  .carma-magenta .carma-home-container .home-loss-box img {
+    margin: 0 auto 0 auto;
+  }
+}
+@media screen and (min-width: 480px) {
+  .carma-magenta .carma-home-container .home-loss-box img {
+    margin: 0 auto 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .carma-magenta .carma-home-container .home-loss-box img {
+    margin: 0 auto 0 auto;
+  }
+}
+@media screen and (min-width: 1088px) {
+  .carma-magenta .carma-home-container .home-loss-box img {
+    margin: -2em auto 0 auto;
+  }
+}
+.carma-magenta .carma-home-container .home-body-box {
+  display: block;
+}
+@media screen and (min-width: 480px) {
+  .carma-magenta .carma-home-container .home-body-box {
+    /*width: 100%;*/
+  }
+}
+@media screen and (min-width: 768px) {
+  .carma-magenta .carma-home-container .home-body-box {
+    float: left;
+    display: block;
+    margin-right: 4.34783%;
+    width: 100%;
+  }
+  .carma-magenta .carma-home-container .home-body-box:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1088px) {
+  .carma-magenta .carma-home-container .home-body-box {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 48.93617%;
+  }
+  .carma-magenta .carma-home-container .home-body-box:last-child {
+    margin-right: 0;
+  }
+}
+.carma-magenta .carma-home-container .home-body-box img {
+  display: block;
+}
+@media screen and (min-width: 200px) {
+  .carma-magenta .carma-home-container .home-body-box img {
+    margin: 0 auto 0 auto;
+  }
+}
+@media screen and (min-width: 480px) {
+  .carma-magenta .carma-home-container .home-body-box img {
+    margin: 0 auto 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .carma-magenta .carma-home-container .home-body-box img {
+    margin: 0 auto 0 auto;
+  }
+}
+@media screen and (min-width: 1088px) {
+  .carma-magenta .carma-home-container .home-body-box img {
+    margin: -2em auto 0 auto;
+  }
+}
+
 /*--------------------------------------------------------------
 6.1 Layout and Structure
 --------------------------------------------------------------*/
@@ -1957,6 +2107,35 @@ object {
 }
 #content .entry-meta a, #content .entry-meta a:visited {
   border-bottom: solid 1px #ff0000;
+}
+
+/* CARMA */
+.carma_slider {
+  display: block;
+  width: 100%;
+  background: #FFF6BF;
+}
+@media screen and (min-width: 768px) {
+  .carma_slider {
+    height: auto;
+  }
+}
+@media screen and (min-width: 1088px) {
+  .carma_slider {
+    height: 520px;
+  }
+}
+
+.slider_container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto 0 auto;
+}
+.slider_container:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /*--------------------------------------------------------------
