@@ -54,8 +54,11 @@
 <!-- END FRONT SLIDER -->
 <div class="carma-magenta">
 	<div class="carma-home-container">
-		<div class="home-loss-box"><img src="http://carmaweightloss.net.site/wp-content/themes/scg_studio/assets/js/vendor/weight-loss-icon.png" alt="Weight Loss"></div>
-		<div class="home-body-box"><img src="http://carmaweightloss.net.site/wp-content/themes/scg_studio/assets/js/vendor/bodyworks-icon.png" alt="Bodyworks"></div>
+		<?php if ( ! dynamic_sidebar( 'home-text' ) ) : ?>
+			
+	  	<?php endif; ?> 
+		<!--<div class="home-loss-box"><img src="http://carmaweightloss.net.site/wp-content/themes/scg_studio/assets/js/vendor/weight-loss-icon.png" alt="Weight Loss"></div>
+		<div class="home-body-box"><img src="http://carmaweightloss.net.site/wp-content/themes/scg_studio/assets/js/vendor/bodyworks-icon.png" alt="Bodyworks"></div> -->
 	</div>
 </div>
 </body>

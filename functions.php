@@ -149,7 +149,7 @@ if ( !function_exists('digistarter_widgets_init') ) :
 	add_action( 'widgets_init', 'digistarter_widgets_init' );
 endif;
 
-if ( !function_exists('slider_widgets_init') ) :
+/*if ( !function_exists('slider_widgets_init') ) :
 	function slider_widgets_init() {
 		register_sidebar( array(
 			'name'          => __( 'carma-slider', 'slider' ),
@@ -161,6 +161,20 @@ if ( !function_exists('slider_widgets_init') ) :
 		) );
 	}
 	add_action( 'widgets_init', 'slider_widgets_init' );
+endif;*/
+
+if ( !function_exists('hometext_widgets_init') ) :
+	function hometext_widgets_init() {
+		register_sidebar( array(
+			'name'          => __( 'home-text', 'hometext' ),
+			'id'            => 'home-loss-box',
+			'before_widget' => '<div id="%1$s" class="widget home-loss-box">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h4 class="widget-title">',
+			'after_title'   => '</h4>',
+		) );
+	}
+	add_action( 'widgets_init', 'hometext_widgets_init' );
 endif;
 
 
