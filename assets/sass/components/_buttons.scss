@@ -1,13 +1,14 @@
 @mixin neat-buttons($border-color: #ccc, $border-radius: 0, $button-padding: 20px, $button-bg: #ffffff ) {
-	background: $button-bg;
-	border: solid 5px $border-color;
+	background: $light-green;
+	/*border: solid 5px $border-color;*/
 	border-radius: $border-radius;
 	box-shadow: none;
 	clear: both;
 	font-family: $title;
 	margin: 10px 0;
 	padding: $button-padding;
-	transition: all 200ms ease-in-out;
+	color: $light-till-green;
+	/*transition: all 200ms ease-in-out;*/
 
 	&:focus {
 		background: darken( $button-bg, 5% );
@@ -18,29 +19,29 @@
 		padding: $button-padding;
 	}
 
-	&:hover {
+	/*&:hover {
 		background: darken( $button-bg, 5% );
 		border: solid 5px darken( $border-color, 20% );
 		border-radius: $border-radius;
 		box-shadow: none;
 		font-family: $title;
 		padding: $button-padding;
-	}
+	}*/
 }
 
 @mixin neat-3d-buttons($border-color: #ccc, $border-radius: 0, $button-padding: 20px, $button-bg: #ffffff) {
-	background: $button-bg;
-	border-top: solid 3px $border-color;
+	background: $light-green;
+	/*border-top: solid 3px $border-color;
 	border-right: solid 3px $border-color;
 	border-left: solid 3px $border-color;
-	border-bottom: solid 5px #999;
+	border-bottom: solid 5px #999;*/
 	border-radius: $border-radius;
 	clear: both;
 	float: left;
-	font-family: oswald;
+	font-family: $sans-serif;
 	margin: 15px 0;
 	padding: $button-padding;
-	transition: all 200ms ease-in-out;
+	/*transition: all 200ms ease-in-out;*/
 
 	&:focus {
 		background: darken( $button-bg, 5% );
@@ -54,7 +55,7 @@
 		padding: $button-padding;
 	}
 
-	&:hover {
+	/*&:hover {
 		background: darken( $button-bg, 5% );
 		border-top: solid 3px darken( $border-color, 20% );
 		border-right: solid 3px darken( $border-color, 20% );
@@ -64,7 +65,7 @@
 		box-shadow: none;
 		font-family: $title;
 		padding: $button-padding;
-	}
+	}*/
 }
 
 #submit {

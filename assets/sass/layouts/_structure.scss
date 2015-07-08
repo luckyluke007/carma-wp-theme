@@ -5,6 +5,7 @@ html {
 }
 body {
 	color: #000;
+	background: $magenta;
 	font-family: $content;
 	line-height: 1.5em;
 	word-break: break-word;
@@ -20,8 +21,9 @@ body {
 }
 
 #primary {
+	font-family: $sans-serif;
+	color: $white;
 	@include clearfix;
-
 	@include media($sm) {
 		@include span-columns( 4 );
 	}
@@ -29,7 +31,7 @@ body {
 		@include span-columns( 4 );
 		@include omega( block );
 	}
-	margin: auto;
+	margin: 2em auto;
 	width: 100%;
 
 	ul {
@@ -50,7 +52,7 @@ body {
 		@include span-columns( 2 );
 		@include omega( block );
 	}
-	margin: 20px auto;
+	margin: 2em auto;
 	padding: 0 30px 0 0;
 	width: 100%;
 }
@@ -79,6 +81,31 @@ body {
 	}
 	@include media($hg) {
 		position: absolute;
+	}
+	#social-media {
+		text-align: center;
+		@include outer-container();
+		margin: 0 auto;
+		a.socialmedia, a.socialmedia:hover {
+			display: inline-block;
+			width:30px;
+			overflow: hidden;
+			text-indent: -999em;
+			background-position: 0;
+			margin:.25em .25em 1em .25em;
+		}
+		a.socialmedia:hover {
+			background-position: -30px 0;
+		}
+		.facebook {
+			background: url('http://carmaweightloss.net.site/wp-content/uploads/2015/07/facebook.svg') no-repeat;
+		}
+		.google {
+			background: url('http://carmaweightloss.net.site/wp-content/uploads/2015/07/google-plus.svg') no-repeat;
+		}
+		.twitter {
+			background: url('http://carmaweightloss.net.site/wp-content/uploads/2015/07/twitter.svg') no-repeat;
+		}
 	}
 	.carma-home-container {
 		display: block;

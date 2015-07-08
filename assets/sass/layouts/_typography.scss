@@ -45,7 +45,6 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1.25em;
 	margin-bottom: 20px;
 	text-transform: uppercase;
-
 	a, a:visited {
 		text-decoration: none;
 
@@ -55,28 +54,28 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 h1 {
-	@include fontSize(75px);
-	color: #000;
+	@include fontSize(36px);
+	color: $white;
 	font-family: $title;
 }
 h2 {
-	@include fontSize(50px);
+	@include fontSize(30px);
 	font-family: $title;
 }
 h3 {
-	@include fontSize(35px);
+	@include fontSize(25px);
 	font-family: $title;
 }
 h4 {
-	@include fontSize(24px);
-	font-family: $title;
-}
-h5 {
 	@include fontSize(20px);
 	font-family: $title;
 }
+h5 {
+	@include fontSize(16px);
+	font-family: $title;
+}
 h6 {
-	@include fontSize(18px);
+	@include fontSize(14px);
 	font-family: $title;
 }
 blockquote {
@@ -94,12 +93,12 @@ strong, b {
 	font-family: $title;
 }
 a, a:visited {
-	@include transition (all 200ms ease-in-out);
+	/*@include transition (all 200ms ease-in-out);*/
 	color: #666;
 	text-decoration: none;
 
 	&:hover {
-		@include transition (all 200ms ease-in-out);
+		/*@include transition (all 200ms ease-in-out);*/
 		color: $primary-color;
 	}
 }
@@ -110,17 +109,20 @@ ol {
 	@extend %default-ol; // Adds browser default spacing back
 }
 .entry-title {
+	display: block;
+	@include fill-parent;
 	font-family: $title;
 	text-align: center;
-
+	border-bottom: 1px dotted $white;
+	font-weight: 400;
 	@include media($sm) {
-		@include fontSize(40px);
+		@include fontSize(36px);
 	}
 	@include media($smbg) {
-		@include fontSize(65px);
+		@include fontSize(36px);
 	}
 	@include media($md) {
-		@include fontSize(100px);
+		@include fontSize(40px);
 	}
 }
 #primary,

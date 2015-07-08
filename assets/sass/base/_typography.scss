@@ -1,7 +1,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   background-color: $base-background-color;
-  color: $base-font-color;
+  color: $white;
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
@@ -61,7 +61,7 @@ p {
 }
 
 a {
-  @include transition(color 0.1s linear);
+  /*@include transition(color 0.1s linear);*/
   color: $base-link-color;
   text-decoration: none;
 

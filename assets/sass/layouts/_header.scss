@@ -8,7 +8,7 @@
 		position:absolute;
 		z-index: 2;
 		width:100%;
-		max-width:121px;
+		max-width:148px;
 	}
 	.site-title {
 		@include span-columns(12);
@@ -68,11 +68,12 @@
 		position:absolute;
 		z-index: 10000;
 		width:100%;
-		max-width:121px;
+		max-width:148px;
 	}
 	.site-title {
 		padding: .75em 0 0 2em;
 		font-family: "great_vibesregular", Times New Roman, Times, serif;
+		font-weight: 500;
 		@include media($sm) {
 			font-size: $h3-font-size;
 			padding: .75em 0 0 3em;
