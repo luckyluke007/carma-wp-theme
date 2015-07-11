@@ -94,12 +94,12 @@ strong, b {
 }
 a, a:visited {
 	/*@include transition (all 200ms ease-in-out);*/
-	color: #666;
+	color: $light-yellow;
 	text-decoration: none;
 
 	&:hover {
 		/*@include transition (all 200ms ease-in-out);*/
-		color: $primary-color;
+		color: $light-till-green;
 	}
 }
 ul {
@@ -111,22 +111,54 @@ ol {
 .entry-title {
 	display: block;
 	@include fill-parent;
-	font-family: $title;
+	font-family: $sans-serif;
 	text-align: center;
 	border-bottom: 1px dotted $white;
 	font-weight: 400;
 	@include media($sm) {
-		@include fontSize(36px);
+		@include fontSize(45px);
 	}
 	@include media($smbg) {
-		@include fontSize(36px);
+		@include fontSize(45px);
 	}
 	@include media($md) {
-		@include fontSize(40px);
+		@include fontSize(60px);
 	}
 }
 #primary,
 #secondary {
-	font-family: $content;
+	font-family: $sans-serif;
 }
+
+footer.entry-meta {
+	display: block;
+	margin: 0 0 5em 0;
+	background: #d24375;
+	padding: .5em .5em .5em 1.5em;
+	border-radius: .25em;
+	-webkit-border-radius: .25em;
+	-moz-border-radius: .25em;
+	font-size: $small-font-size*1.5;
+	a, a:active {
+		color: $dark-gray;
+	}
+	a:hover {
+		color: $medium-gray;
+	}
+}
+.entry-meta {
+	display: block;
+	font-size: $small-font-size*1.5;
+	margin: -1.5em 0 .5em 0;
+}
+
+.page-header .page-title {
+	display: block;
+	@include fill-parent;
+	border-bottom: 1px dotted $white;
+	font-weight:400;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
 

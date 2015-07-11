@@ -50,7 +50,7 @@ and Blueprint http://www.blueprintcss.org/
 button,
 input[type="submit"] {
   -webkit-font-smoothing: antialiased;
-  background-color: #477DCA;
+  background-color: #FFF6BF;
   border-radius: 3px;
   color: white;
   display: inline-block;
@@ -128,14 +128,14 @@ p {
 
 a {
   /*@include transition(color 0.1s linear);*/
-  color: #477DCA;
+  color: #FFF6BF;
   text-decoration: none;
 }
 a:hover {
-  color: #2c5999;
+  color: #ddd4a1;
 }
 a:active, a:focus {
-  color: #2c5999;
+  color: #ddd4a1;
   outline: none;
 }
 
@@ -241,6 +241,21 @@ select {
   margin-bottom: 1.5em;
   max-width: 100%;
   width: auto;
+}
+
+input#s {
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border: 0px solid #DDD;
+}
+
+input#searchsubmit {
+  background: #fff;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  font-size: .75em;
+  padding: .62em;
+  border-left: 1px solid #ddd;
 }
 
 table {
@@ -797,44 +812,76 @@ strong, b {
 
 a, a:visited {
   /*@include transition (all 200ms ease-in-out);*/
-  color: #666;
+  color: #FFF6BF;
   text-decoration: none;
 }
 a:hover, a:visited:hover {
   /*@include transition (all 200ms ease-in-out);*/
-  color: #ff0000;
+  color: #ddd4a1;
 }
 
 .entry-title {
   display: block;
   /*width: 100%;*/
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   text-align: center;
   border-bottom: 1px dotted #fff;
   font-weight: 400;
 }
 @media screen and (min-width: 200px) {
   .entry-title {
-    font-size: 36px;
-    font-size: 2.25rem;
+    font-size: 45px;
+    font-size: 2.8125rem;
   }
 }
 @media screen and (min-width: 480px) {
   .entry-title {
-    font-size: 36px;
-    font-size: 2.25rem;
+    font-size: 45px;
+    font-size: 2.8125rem;
   }
 }
 @media screen and (min-width: 768px) {
   .entry-title {
-    font-size: 40px;
-    font-size: 2.5rem;
+    font-size: 60px;
+    font-size: 3.75rem;
   }
 }
 
 #primary,
 #secondary {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+footer.entry-meta {
+  display: block;
+  margin: 0 0 5em 0;
+  background: #d24375;
+  padding: .5em .5em .5em 1.5em;
+  border-radius: .25em;
+  -webkit-border-radius: .25em;
+  -moz-border-radius: .25em;
+  font-size: 0.75em;
+}
+footer.entry-meta a, footer.entry-meta a:active {
+  color: #333;
+}
+footer.entry-meta a:hover {
+  color: #999;
+}
+
+.entry-meta {
+  display: block;
+  font-size: 0.75em;
+  margin: -1.5em 0 .5em 0;
+}
+
+.page-header .page-title {
+  display: block;
+  /*width: 100%;*/
+  border-bottom: 1px dotted #fff;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 /*--------------------------------------------------------------
@@ -843,13 +890,13 @@ a:hover, a:visited:hover {
 #submit {
   background: #E6EFC2;
   /*border: solid 5px $border-color;*/
-  border-radius: 0;
+  border-radius: 0.25em;
   box-shadow: none;
   clear: both;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   margin: 10px 0;
   padding: 20px;
-  color: #ddd4a1;
+  color: #de477c;
   /*transition: all 200ms ease-in-out;*/
   /*&:hover {
   	background: darken( $button-bg, 5% );
@@ -863,7 +910,7 @@ a:hover, a:visited:hover {
 #submit:focus {
   background: black;
   border: solid 5px #222222;
-  border-radius: 0;
+  border-radius: 0.25em;
   box-shadow: none;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   padding: 20px;
@@ -875,13 +922,13 @@ a:hover, a:visited:hover {
 .neat-button {
   background: #E6EFC2;
   /*border: solid 5px $border-color;*/
-  border-radius: 0;
+  border-radius: 0.25em;
   box-shadow: none;
   clear: both;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   margin: 10px 0;
   padding: 20px;
-  color: #ddd4a1;
+  color: #de477c;
   /*transition: all 200ms ease-in-out;*/
   /*&:hover {
   	background: darken( $button-bg, 5% );
@@ -895,7 +942,7 @@ a:hover, a:visited:hover {
 .neat-button:focus {
   background: #f2f2f2;
   border: solid 5px #999999;
-  border-radius: 0;
+  border-radius: 0.25em;
   box-shadow: none;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   padding: 20px;
@@ -907,7 +954,7 @@ a:hover, a:visited:hover {
   border-right: solid 3px $border-color;
   border-left: solid 3px $border-color;
   border-bottom: solid 5px #999;*/
-  border-radius: 0;
+  border-radius: 0.25em;
   clear: both;
   float: left;
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -932,7 +979,7 @@ a:hover, a:visited:hover {
   border-right: solid 3px #999999;
   border-left: solid 3px #999999;
   border-bottom: solid 3px #999999;
-  border-radius: 0;
+  border-radius: 0.25em;
   box-shadow: none;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   padding: 20px;
@@ -941,13 +988,13 @@ a:hover, a:visited:hover {
 input[type="submit"] {
   background: #E6EFC2;
   /*border: solid 5px $border-color;*/
-  border-radius: 0;
+  border-radius: 0.25em;
   box-shadow: none;
   clear: both;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   margin: 10px 0;
   padding: 20px;
-  color: #ddd4a1;
+  color: #de477c;
   /*transition: all 200ms ease-in-out;*/
   /*&:hover {
   	background: darken( $button-bg, 5% );
@@ -963,7 +1010,7 @@ input[type="submit"] {
 input[type="submit"]:focus {
   background: black;
   border: solid 5px #222222;
-  border-radius: 0;
+  border-radius: 0.25em;
   box-shadow: none;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   padding: 20px;
@@ -1047,6 +1094,8 @@ body {
 }
 
 #secondary {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #fff;
   margin: 2em auto;
   padding: 0 30px 0 0;
   width: 100%;
@@ -1074,6 +1123,9 @@ body {
   #secondary:last-child {
     margin-right: 0;
   }
+}
+#secondary h4 {
+  font-weight: 300;
 }
 
 /* CARMA */
@@ -1253,6 +1305,12 @@ body {
 .site-branding .site-title:last-child {
   margin-right: 0;
 }
+.site-branding .site-title a, .site-branding .site-title a:active {
+  color: #333 !important;
+}
+.site-branding .site-title a:hover {
+  color: #333 !important;
+}
 @media screen and (min-width: 200px) {
   .site-branding .site-title {
     font-size: 1.75em;
@@ -1329,6 +1387,12 @@ body {
   padding: .75em 0 0 2em;
   font-family: "great_vibesregular", Times New Roman, Times, serif;
   font-weight: 500;
+}
+.carma_branding .site-title a, .carma_branding .site-title a:active {
+  color: #333 !important;
+}
+.carma_branding .site-title a:hover {
+  color: #333 !important;
 }
 @media screen and (min-width: 200px) {
   .carma_branding .site-title {
@@ -1863,6 +1927,10 @@ ul.nav-menu li.current_page_item {
   }
 }
 
+.nav-links {
+  display: none;
+}
+
 .nav-links a:nth-of-type(2) {
   float: right;
 }
@@ -1901,7 +1969,7 @@ ul.nav-menu li.current_page_item {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5em 0 0;
+  margin: 0;
 }
 
 .page-links {

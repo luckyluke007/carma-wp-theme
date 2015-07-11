@@ -76,3 +76,16 @@ select {
   max-width: 100%;
   width: auto;
 }
+input#s {
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border: 0px solid #DDD;
+}
+input#searchsubmit {
+  background: $white;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  font-size: .75em;
+  padding: .62em;
+  border-left: 1px solid #ddd;
+}
