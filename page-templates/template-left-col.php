@@ -12,41 +12,45 @@
  */
 
 get_header(); ?>
+<div class="wrap">
+	<div class="page">
+		<div id="primary" class="content-area">
+			<main id="main" class="site-main" role="main">
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+			<?php if ( have_posts() ) : ?>
 
-		<?php if ( have_posts() ) : ?>
+				<?php /* Start the Loop */ ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+					<?php
+						/* Include the Post-Format-specific template for the content.
+						 * If you want to override this in a child theme, then include a file
+						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+						 */
+						get_template_part( 'page-templates/partials/content', 'page' );
+					?>
 
-				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'page-templates/partials/content', 'page' );
-				?>
+					<?php
+					        // If comments are open or we have at least one comment, load up the comment template
+					        if ( comments_open() || '0' != get_comments_number() ) :
+					                comments_template();
+					        endif;
+					?>
 
-				<?php
-				        // If comments are open or we have at least one comment, load up the comment template
-				        if ( comments_open() || '0' != get_comments_number() ) :
-				                comments_template();
-				        endif;
-				?>
+				<?php endwhile; ?>
 
-			<?php endwhile; ?>
+				<?php digistarter_paging_nav(); ?>
 
-			<?php digistarter_paging_nav(); ?>
+			<?php else : ?>
 
-		<?php else : ?>
+				<?php get_template_part( 'partials/content', 'none' ); ?>
 
-			<?php get_template_part( 'partials/content', 'none' ); ?>
+			<?php endif; ?>
 
-		<?php endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-<?php get_sidebar(); ?>
+			</main><!-- #main -->
+		</div><!-- #primary -->
+	
+		<?php get_sidebar(); ?>
+	</div><!--Page -->
+</div><!--wrap-->
 <?php get_footer(); ?>

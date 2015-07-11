@@ -1048,6 +1048,12 @@ body {
   clear: both;
 }
 
+.wrap {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
 #main {
   padding: 0 50px;
 }
