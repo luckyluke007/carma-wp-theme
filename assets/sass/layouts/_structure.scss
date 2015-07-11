@@ -12,11 +12,11 @@ body {
 }
 #page {
 	@include outer-container();
+	margin: 0 auto 0 auto;
 }
 .wrap {
 	display: block;
 	width:100%;
-	text-align:center;
 }
 
 #main {

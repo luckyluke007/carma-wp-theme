@@ -1041,6 +1041,7 @@ body {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
+  margin: 0 auto 0 auto;
 }
 #page:after {
   content: "";
@@ -1051,7 +1052,6 @@ body {
 .wrap {
   display: block;
   width: 100%;
-  text-align: center;
 }
 
 #main {
