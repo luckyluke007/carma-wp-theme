@@ -193,6 +193,16 @@ gulp.task('copyjs', function() {
    gulp.src('**/*.js')
    .pipe(gulp.dest('../carma/wp-content/themes/scg_studio/'));
 });
+gulp.task('copyimages', function() {
+   gulp.src('**/*.jpg')
+   .pipe(gulp.dest('../carma/wp-content/themes/scg_studio/'));
+   gulp.src('**/*.gif')
+   .pipe(gulp.dest('../carma/wp-content/themes/scg_studio/'));
+   gulp.src('**/*.png')
+   .pipe(gulp.dest('../carma/wp-content/themes/scg_studio/'));
+   gulp.src('**/*.svg')
+   .pipe(gulp.dest('../carma/wp-content/themes/scg_studio/'));
+});
 
 // ==== TASKS ==== //
 /**
@@ -204,12 +214,12 @@ gulp.task('copyjs', function() {
 
 // Package Distributable Theme
 gulp.task('build', function(cb) {
-		runSequence('cleanup', 'styles', 'js', 'buildPhp', 'buildLibrary', 'buildAssets', 'buildImages', 'buildZip','cleanupFinal','copyfiles', 'copycss', 'copyjs', cb);
+		runSequence('cleanup', 'styles', 'js', 'buildPhp', 'buildLibrary', 'buildAssets', 'buildImages', 'buildZip','cleanupFinal','copyfiles', 'copycss', 'copyjs', 'copyimages', cb);
 });
 
 
 // Watch Task
-gulp.task('default', ['styles', 'browser-sync', 'copyfiles', 'copycss', 'copyjs'], function () {
+gulp.task('default', ['styles', 'browser-sync', 'copyfiles', 'copycss', 'copyjs', 'copyimages'], function () {
     gulp.watch(source+"sass/**/*.scss", ['styles']);
     gulp.watch(source+"js/vendor/**/*.js", ['js', browserSync.reload]);
 });
