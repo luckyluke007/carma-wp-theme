@@ -824,26 +824,25 @@ a:hover, a:visited:hover {
   display: block;
   /*width: 100%;*/
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  text-align: center;
-  border-bottom: 1px dotted #fff;
+  text-align: left;
   font-weight: 400;
 }
 @media screen and (min-width: 200px) {
   .entry-title {
-    font-size: 45px;
-    font-size: 2.8125rem;
+    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 @media screen and (min-width: 480px) {
   .entry-title {
-    font-size: 45px;
-    font-size: 2.8125rem;
+    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 @media screen and (min-width: 768px) {
   .entry-title {
-    font-size: 60px;
-    font-size: 3.75rem;
+    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
 
@@ -1863,8 +1862,7 @@ body {
 }
 
 #site-navigation {
-  border-top: solid 5px #f3f3f3;
-  border-bottom: solid 5px #f3f3f3;
+  /*border-top: solid 2px $magenta;*/
 }
 
 ul.nav-menu li {
@@ -1892,12 +1890,14 @@ ul.nav-menu li:hover {
 }
 
 .menu-main-menu-container li.current-menu-item {
-  background-color: #f3f3f3;
+  border-bottom: solid 4px #de477c;
+  /*background-color: #f3f3f3;*/
   display: block;
+  height: 41px;
 }
 
 ul.nav-menu li.current_page_item {
-  background: #f3f3f3;
+  background: none;
 }
 
 #primary-nav {

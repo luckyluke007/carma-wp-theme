@@ -25,7 +25,7 @@
 <body>
 <div class="carma_header">
 	<div class="carma_branding">
-		<div class="logo"><img src="http://carmaweightloss.net.site/wp-content/uploads/2015/07/flower.svg"></div>
+		<div class="logo"><img src="http://www.carmaweightloss.net/carma_v2/wp-content/themes/scg_studio/assets/js/vendor/flower.svg"></div>
 		<div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>
 		<div class="site-description"><?php bloginfo( 'description' ) ?></div>
 	</div>
