@@ -180,27 +180,17 @@ gulp.task('buildImages', function() {
 });
 
 gulp.task('copyfiles', function() {
-   gulp.src('./*')
-   .pipe(gulp.dest('../carma/wp-content/themes/scg_studio/*'));
-});
-
-gulp.task('copystyles', function() {
-   gulp.src('./assets/css/*')
-   .pipe(gulp.dest('../carma/wp-content/themes/scg_studio/assets/css'));
-});
-
-gulp.task('copytemplates', function() {
-   gulp.src('./page-templates/*')
-   .pipe(gulp.dest('../carma/wp-content/themes/scg_studio/page-templates'));
-});
-
-gulp.task('copypage', function() {
-   gulp.src('./page.php')
+   gulp.src('**/*.php')
    .pipe(gulp.dest('../carma/wp-content/themes/scg_studio/'));
 });
 
-gulp.task('copysingle', function() {
-   gulp.src('./single.php')
+gulp.task('copycss', function() {
+   gulp.src('**/*.css')
+   .pipe(gulp.dest('../carma/wp-content/themes/scg_studio/'));
+});
+
+gulp.task('copyjs', function() {
+   gulp.src('**/*.js')
    .pipe(gulp.dest('../carma/wp-content/themes/scg_studio/'));
 });
 
@@ -214,12 +204,12 @@ gulp.task('copysingle', function() {
 
 // Package Distributable Theme
 gulp.task('build', function(cb) {
-		runSequence('cleanup', 'styles', 'js', 'buildPhp', 'buildLibrary', 'buildAssets', 'buildImages', 'buildZip','cleanupFinal','copyfiles', 'copystyles', 'copytemplates', 'copypage', 'copysingle', cb);
+		runSequence('cleanup', 'styles', 'js', 'buildPhp', 'buildLibrary', 'buildAssets', 'buildImages', 'buildZip','cleanupFinal','copyfiles', 'copycss', 'copyjs', cb);
 });
 
 
 // Watch Task
-gulp.task('default', ['styles', 'browser-sync', 'copyfiles', 'copystyles', 'copytemplates', 'copypage', 'copysingle'], function () {
+gulp.task('default', ['styles', 'browser-sync', 'copyfiles', 'copycss', 'copyjs'], function () {
     gulp.watch(source+"sass/**/*.scss", ['styles']);
     gulp.watch(source+"js/vendor/**/*.js", ['js', browserSync.reload]);
 });
