@@ -12,7 +12,6 @@
 	}
 	.site-title {
 		@include span-columns(12);
-		padding: .75em 0 0 2em;
 		font-family: "great_vibesregular", Times New Roman, Times, serif;
 		a, a:active {
 			color: $dark-gray !important;
@@ -21,8 +20,8 @@
 			color: $dark-gray !important;
 		}
 		@include media($sm) {
-			font-size: $h3-font-size;
-			padding: .75em 0 0 3em;
+			font-size: $h4-font-size;
+			padding: .25em 0 0 3em;
 			line-height: 1em;
 		}
 		@include media($smbg) {
@@ -74,10 +73,17 @@
 		position:absolute;
 		z-index: 10000;
 		width:100%;
-		max-width:148px;
+		@include media($sm) {
+			max-width:125px;
+		}
+		@include media($smbg) {
+			max-width:148px;
+		}
+		@include media($md) {
+			max-width:148px;
+		}
 	}
 	.site-title {
-		padding: .75em 0 0 2em;
 		font-family: "great_vibesregular", Times New Roman, Times, serif;
 		font-weight: 500;
 		a, a:active {
@@ -88,15 +94,23 @@
 		}
 		@include media($sm) {
 			font-size: $h3-font-size;
-			padding: .75em 0 0 3em;
+			padding: .25em 0 0 3em;
 			line-height: 1em;
 		}
+		@include media($bgph) {
+			font-size: $h3-font-size;
+			padding: .75em 0 0 3em;
+		}
 		@include media($smbg) {
-			font-size: $h2-font-size;
-			padding: .5em 0 0 3em;
+			@include fontSize(45px);
+			padding: .85em 0 0 3em;
 		}
 		@include media($md) {
-			font-size: $h1-font-size;
+			@include fontSize(50px);
+			padding: .5em 0 0 2.25em;
+		}
+		@include media($hg) {
+			@include fontSize(55px);
 			padding: .5em 0 0 2.25em;
 		}
 		//a,a:visited {

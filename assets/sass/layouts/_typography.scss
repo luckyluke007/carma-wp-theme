@@ -89,7 +89,7 @@ cite {
 }
 strong, b {
 	@include fontSize(20px);
-	color: #000;
+	color: $white;
 	font-family: $title;
 }
 a, a:visited {
@@ -109,6 +109,24 @@ ol {
 	@extend %default-ol; // Adds browser default spacing back
 }
 .entry-title {
+	display: block;
+	@include fill-parent;
+	font-family: $sans-serif;
+	text-align: center;
+	font-weight: 400;
+	border-bottom: 1px dotted $light-yellow;
+	@include media($sm) {
+		@include fontSize(35px);
+	}
+	@include media($smbg) {
+		@include fontSize(35px);
+	}
+	@include media($md) {
+		@include fontSize(50px);
+	}
+}
+
+.blog-title {
 	display: block;
 	@include fill-parent;
 	font-family: $sans-serif;

@@ -806,7 +806,7 @@ cite {
 strong, b {
   font-size: 20px;
   font-size: 1.25rem;
-  color: #000;
+  color: #fff;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 
@@ -824,23 +824,50 @@ a:hover, a:visited:hover {
   display: block;
   /*width: 100%;*/
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  border-bottom: 1px dotted #FFF6BF;
+}
+@media screen and (min-width: 200px) {
+  .entry-title {
+    font-size: 35px;
+    font-size: 2.1875rem;
+  }
+}
+@media screen and (min-width: 480px) {
+  .entry-title {
+    font-size: 35px;
+    font-size: 2.1875rem;
+  }
+}
+@media screen and (min-width: 860px) {
+  .entry-title {
+    font-size: 50px;
+    font-size: 3.125rem;
+  }
+}
+
+.blog-title {
+  display: block;
+  /*width: 100%;*/
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   text-align: left;
   font-weight: 400;
 }
 @media screen and (min-width: 200px) {
-  .entry-title {
+  .blog-title {
     font-size: 20px;
     font-size: 1.25rem;
   }
 }
 @media screen and (min-width: 480px) {
-  .entry-title {
+  .blog-title {
     font-size: 20px;
     font-size: 1.25rem;
   }
 }
-@media screen and (min-width: 768px) {
-  .entry-title {
+@media screen and (min-width: 860px) {
+  .blog-title {
     font-size: 30px;
     font-size: 1.875rem;
   }
@@ -1079,7 +1106,7 @@ body {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 860px) {
   #primary {
     float: left;
     display: block;
@@ -1117,7 +1144,7 @@ body {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 860px) {
   #secondary {
     float: left;
     display: block;
@@ -1156,7 +1183,7 @@ body {
     position: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 860px) {
   .carma-magenta {
     position: none;
   }
@@ -1223,7 +1250,7 @@ body {
     /*width: 100%;*/
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 860px) {
   .carma-magenta .carma-home-container .home-loss-box {
     float: left;
     display: block;
@@ -1266,7 +1293,7 @@ body {
     margin: 0 auto 0 auto;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 860px) {
   .carma-magenta .carma-home-container .home-loss-box img {
     margin: 0 auto 0 auto;
   }
@@ -1304,7 +1331,6 @@ body {
   display: block;
   margin-right: 2.12766%;
   width: 100%;
-  padding: .75em 0 0 2em;
   font-family: "great_vibesregular", Times New Roman, Times, serif;
 }
 .site-branding .site-title:last-child {
@@ -1318,8 +1344,8 @@ body {
 }
 @media screen and (min-width: 200px) {
   .site-branding .site-title {
-    font-size: 1.75em;
-    padding: .75em 0 0 3em;
+    font-size: 1.5em;
+    padding: .25em 0 0 3em;
     line-height: 1em;
   }
 }
@@ -1329,7 +1355,7 @@ body {
     padding: .5em 0 0 3em;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 860px) {
   .site-branding .site-title {
     font-size: 2.75em;
     padding: .5em 0 0 2.25em;
@@ -1355,7 +1381,7 @@ body {
     font-size: 1.125rem;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 860px) {
   .site-branding .site-description {
     font-size: 25px;
     font-size: 1.5625rem;
@@ -1386,10 +1412,23 @@ body {
   position: absolute;
   z-index: 10000;
   width: 100%;
-  max-width: 148px;
+}
+@media screen and (min-width: 200px) {
+  .carma_branding .logo {
+    max-width: 125px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .carma_branding .logo {
+    max-width: 148px;
+  }
+}
+@media screen and (min-width: 860px) {
+  .carma_branding .logo {
+    max-width: 148px;
+  }
 }
 .carma_branding .site-title {
-  padding: .75em 0 0 2em;
   font-family: "great_vibesregular", Times New Roman, Times, serif;
   font-weight: 500;
 }
@@ -1402,19 +1441,34 @@ body {
 @media screen and (min-width: 200px) {
   .carma_branding .site-title {
     font-size: 1.75em;
-    padding: .75em 0 0 3em;
+    padding: .25em 0 0 3em;
     line-height: 1em;
+  }
+}
+@media screen and (min-width: 414px) {
+  .carma_branding .site-title {
+    font-size: 1.75em;
+    padding: .75em 0 0 3em;
   }
 }
 @media screen and (min-width: 480px) {
   .carma_branding .site-title {
-    font-size: 2em;
-    padding: .5em 0 0 3em;
+    font-size: 45px;
+    font-size: 2.8125rem;
+    padding: .85em 0 0 3em;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 860px) {
   .carma_branding .site-title {
-    font-size: 2.75em;
+    font-size: 50px;
+    font-size: 3.125rem;
+    padding: .5em 0 0 2.25em;
+  }
+}
+@media screen and (min-width: 1088px) {
+  .carma_branding .site-title {
+    font-size: 55px;
+    font-size: 3.4375rem;
     padding: .5em 0 0 2.25em;
   }
 }
@@ -1438,7 +1492,7 @@ body {
     font-size: 1.125rem;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 860px) {
   .carma_branding .site-description {
     font-size: 25px;
     font-size: 1.5625rem;
@@ -1474,7 +1528,7 @@ body {
     float: center;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 860px) {
   .flexnav ul {
     float: right;
   }
@@ -1526,7 +1580,7 @@ body {
     background: #ddd4a1;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 860px) {
   .flexnav li a {
     color: #baaf73;
     background: none;
@@ -1816,7 +1870,7 @@ body {
     position: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 860px) {
   .carma-navigation .navigation {
     position: absolute;
   }
@@ -1877,7 +1931,7 @@ ul.nav-menu li {
     width: 100%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 860px) {
   ul.nav-menu li {
     text-align: none;
     width: inherit;
@@ -1920,7 +1974,7 @@ ul.nav-menu li.current_page_item {
     position: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 860px) {
   #primary-nav {
     position: absolute;
     top: 3.75em;
@@ -2111,7 +2165,7 @@ object {
   width: 100%;
   background: #FFF6BF;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 860px) {
   .carma_slider {
     height: auto;
   }
@@ -2155,7 +2209,7 @@ object {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 860px) {
   .page-template-page-templatestemplate-left-col-php #primary {
     float: left;
     display: block;
@@ -2181,7 +2235,7 @@ object {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 860px) {
   .page-template-page-templatestemplate-left-col-php #secondary {
     float: left;
     display: block;
@@ -2217,7 +2271,7 @@ object {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 200px) and (min-width: 768px) {
+@media screen and (min-width: 200px) and (min-width: 860px) {
   .page-template-page-templatestemplate-right-col-php #primary {
     float: left;
     display: block;
@@ -2229,13 +2283,13 @@ object {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 860px) {
   .page-template-page-templatestemplate-right-col-php #secondary {
     float: right !important;
     margin-right: 1.5%;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 200px) {
+@media screen and (min-width: 860px) and (min-width: 200px) {
   .page-template-page-templatestemplate-right-col-php #secondary {
     float: left;
     display: block;
@@ -2246,7 +2300,7 @@ object {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 768px) {
+@media screen and (min-width: 860px) and (min-width: 860px) {
   .page-template-page-templatestemplate-right-col-php #secondary {
     float: left;
     display: block;
