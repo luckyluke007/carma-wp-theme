@@ -1349,6 +1349,13 @@ body {
     line-height: 1em;
   }
 }
+@media screen and (min-width: 414px) {
+  .site-branding .site-title {
+    font-size: 1.5em;
+    padding: .25em 0 0 3em;
+    line-height: 1em;
+  }
+}
 @media screen and (min-width: 480px) {
   .site-branding .site-title {
     font-size: 1.75em;
