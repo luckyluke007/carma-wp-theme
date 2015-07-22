@@ -1,14 +1,31 @@
 /* CARMA */
 
-ul .price-list {
+ul.container {
 	display: block;
 	@include fill-parent;
+	border: 1px solid #fff;
+	margin:0;
+	padding: 0;
 }
 
-ul .price-list li {
-	@include media(4);
-	padding: 4px;
-	border: 1px solid #fff;
+li.pricelist  {
+	@include span-columns(4);
+	padding: 10px 0 10px 0;
+	border-top: 1px solid #fff;
+	list-style-type: none;
+	margin: 0 .83em 0 0;
+	line-height: 16px;
+	font-size: .65em;
+}
+
+li.pricelist:last  {
+	@include span-columns(4);
+	padding: 10px 0 10px 0;
+	border-top: 1px solid #fff;
+	list-style-type: none;
+	margin: 0;
+	line-height: 16px;
+	font-size: .65em;
 }
 
 /* END CARMA */

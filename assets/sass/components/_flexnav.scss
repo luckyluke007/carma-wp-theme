@@ -116,7 +116,10 @@ $fourth_level: #999;
 
 	li ul li a {
 		display: block;
-		background: $second_level;
+		background: $light-yellow;
+		top: -.80em;
+    	right: -1em;
+    	padding: .35em;
 	}
 	ul li ul li a {
 		background: $third_level;
@@ -132,17 +135,17 @@ $fourth_level: #999;
 		width: 50px;
 		height: 100%;
 		display: inline-block;
-		background: #acaca1;
-		background: rgba(0,0,0,.075);
-		text-align: center;
+		/*: #acaca1;*?
+		/*background: rgba(0,0,0,.075);*/
+		text-align: right;
 		&:hover {
 			cursor: pointer;
 		}
 		.navicon {
 			position: relative;
-			top: 1.4em;
-			font-size: 12px;
-			color: #666;
+			top: 1em;
+			font-size: 11px;
+			color: $magenta;
 		}
 	}
 }

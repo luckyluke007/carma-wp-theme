@@ -1623,7 +1623,10 @@ body {
 }
 .flexnav li ul li a {
   display: block;
-  background: #333;
+  background: #FFF6BF;
+  top: -.80em;
+  right: -1em;
+  padding: .35em;
 }
 .flexnav ul li ul li a {
   background: #666;
@@ -1639,18 +1642,18 @@ body {
   width: 50px;
   height: 100%;
   display: inline-block;
-  background: #acaca1;
-  background: rgba(0, 0, 0, 0.075);
-  text-align: center;
+  /*: #acaca1;*?
+  /*background: rgba(0,0,0,.075);*/
+  text-align: right;
 }
 .flexnav .touch-button:hover {
   cursor: pointer;
 }
 .flexnav .touch-button .navicon {
   position: relative;
-  top: 1.4em;
-  font-size: 12px;
-  color: #666;
+  top: 1em;
+  font-size: 11px;
+  color: #de477c;
 }
 
 .menu-button {
@@ -2005,6 +2008,48 @@ ul.nav-menu li.current_page_item {
 /*--------------------------------------------------------------
 6.3 Content
 --------------------------------------------------------------*/
+/* CARMA */
+ul.container {
+  display: block;
+  /*width: 100%;*/
+  border: 1px solid #fff;
+  margin: 0;
+  padding: 0;
+}
+
+li.pricelist {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 31.91489%;
+  padding: 10px 0 10px 0;
+  border-top: 1px solid #fff;
+  list-style-type: none;
+  margin: 0 .83em 0 0;
+  line-height: 16px;
+  font-size: .65em;
+}
+li.pricelist:last-child {
+  margin-right: 0;
+}
+
+li.pricelist:last {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 31.91489%;
+  padding: 10px 0 10px 0;
+  border-top: 1px solid #fff;
+  list-style-type: none;
+  margin: 0;
+  line-height: 16px;
+  font-size: .65em;
+}
+li.pricelist:last:last-child {
+  margin-right: 0;
+}
+
+/* END CARMA */
 /* =Content
 ----------------------------------------------- */
 .sticky {
