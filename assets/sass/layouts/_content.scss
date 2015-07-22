@@ -1,3 +1,19 @@
+/* CARMA */
+
+ul .price-list {
+	display: block;
+	@include fill-parent;
+}
+
+ul .price-list li {
+	@include media(4);
+	padding: 4px;
+	border: 1px solid #fff;
+}
+
+/* END CARMA */
+
+
 /* =Content
 ----------------------------------------------- */
 .sticky {
