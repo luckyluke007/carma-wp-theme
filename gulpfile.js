@@ -202,6 +202,14 @@ gulp.task('copyimages', function() {
    .pipe(gulp.dest('../carma/wp-content/themes/scg_studio/'));
    gulp.src('**/*.svg')
    .pipe(gulp.dest('../carma/wp-content/themes/scg_studio/'));
+   gulp.src('**/*.eot')
+   .pipe(gulp.dest('../carma/wp-content/themes/scg_studio/'));
+   gulp.src('**/*.ttf')
+   .pipe(gulp.dest('../carma/wp-content/themes/scg_studio/'));
+   gulp.src('**/*.woff')
+   .pipe(gulp.dest('../carma/wp-content/themes/scg_studio/'));
+   gulp.src('**/*.woff2')
+   .pipe(gulp.dest('../carma/wp-content/themes/scg_studio/'));
 });
 
 // ==== TASKS ==== //

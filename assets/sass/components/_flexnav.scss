@@ -102,7 +102,7 @@ $fourth_level: #999;
 		z-index: 5;
 
 		li {
-			font-size: 100%;
+			/*font-size: 100%;*/
 			position: relative;
 			overflow: hidden;
 		}
@@ -117,9 +117,10 @@ $fourth_level: #999;
 	li ul li a {
 		display: block;
 		background: $light-yellow;
-		top: -.80em;
-    	right: -1em;
-    	padding: .35em;
+		top: -1.1em;
+    	padding: .35em .75em;
+    	width:100%;
+    	
 	}
 	ul li ul li a {
 		background: $third_level;
@@ -240,6 +241,7 @@ $fourth_level: #999;
 			position: absolute;
 			top: auto;
 			left: 0;
+			width: auto;
 
 			li {
 				width: 100%;

@@ -741,7 +741,7 @@ h1, h2, h3, h4, h5, h6 {
   float: none;
   line-height: 1.25em;
   margin-bottom: 20px;
-  text-transform: uppercase;
+  font-weight: 400;
 }
 h1:after, h2:after, h3:after, h4:after, h5:after, h6:after {
   content: "";
@@ -759,19 +759,19 @@ h1 {
   font-size: 36px;
   font-size: 2.25rem;
   color: #fff;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "great_vibesregular", Times New Roman, Times, serif;
 }
 
 h2 {
   font-size: 30px;
   font-size: 1.875rem;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "great_vibesregular", Times New Roman, Times, serif;
 }
 
 h3 {
   font-size: 25px;
   font-size: 1.5625rem;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "great_vibesregular", Times New Roman, Times, serif;
 }
 
 h4 {
@@ -1614,7 +1614,7 @@ body {
   z-index: 5;
 }
 .flexnav li ul li {
-  font-size: 100%;
+  /*font-size: 100%;*/
   position: relative;
   overflow: hidden;
 }
@@ -1624,9 +1624,9 @@ body {
 .flexnav li ul li a {
   display: block;
   background: #FFF6BF;
-  top: -.80em;
-  right: -1em;
-  padding: .35em;
+  top: -1.1em;
+  padding: .35em .75em;
+  width: 100%;
 }
 .flexnav ul li ul li a {
   background: #666;
@@ -1747,6 +1747,7 @@ body {
     position: absolute;
     top: auto;
     left: 0;
+    width: auto;
   }
   .flexnav li > ul li {
     width: 100%;
@@ -2009,8 +2010,45 @@ ul.nav-menu li.current_page_item {
 6.3 Content
 --------------------------------------------------------------*/
 /* CARMA */
-ul.container {
+a.home-left-btn, a.home-left-btn:active {
   display: block;
+  width: auto;
+  padding: .5em;
+  border-radius: .25em;
+  -webkit-border-radius: .25em;
+  -moz-border-radius: .25em;
+  -o-border-radius: .25em;
+  background: #8fbf31;
+  margin: .25em auto;
+  border-bottom: 1px solid #333;
+  width: 50%;
+}
+
+a.home-left-btn:hover {
+  background: #FFF6BF;
+  color: #333;
+}
+
+a.home-right-btn, a.home-right-btn:active {
+  display: block;
+  width: auto;
+  padding: .5em;
+  border-radius: .25em;
+  -webkit-border-radius: .25em;
+  -moz-border-radius: .25em;
+  -o-border-radius: .25em;
+  background: #ff9c00;
+  margin: .25em auto;
+  border-bottom: 1px solid #333;
+  width: 50%;
+}
+
+a.home-right-btn:hover {
+  background: #FFF6BF;
+  color: #333;
+}
+
+ul.container {
   /*width: 100%;*/
   border: 1px solid #fff;
   margin: 0;
@@ -2021,32 +2059,42 @@ li.pricelist {
   float: left;
   display: block;
   margin-right: 2.12766%;
-  width: 31.91489%;
-  padding: 10px 0 10px 0;
-  border-top: 1px solid #fff;
+  width: 100%;
+  padding: 0;
+  border-bottom: 1px solid #fff;
   list-style-type: none;
-  margin: 0 .83em 0 0;
+  margin: 0 .83em 1em 0;
   line-height: 16px;
   font-size: .65em;
 }
 li.pricelist:last-child {
   margin-right: 0;
 }
-
-li.pricelist:last {
+li.pricelist .price-title {
   float: left;
   display: block;
   margin-right: 2.12766%;
-  width: 31.91489%;
-  padding: 10px 0 10px 0;
-  border-top: 1px solid #fff;
-  list-style-type: none;
-  margin: 0;
-  line-height: 16px;
-  font-size: .65em;
+  width: 100%;
+  font-weight: 500;
+  margin-top: .75em;
+  font-size: 1.25em;
 }
-li.pricelist:last:last-child {
+li.pricelist .price-title:last-child {
   margin-right: 0;
+}
+li.pricelist .price-info {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 48.93617%;
+  padding: 5px 0 10px 0;
+}
+li.pricelist .price-info:last-child {
+  margin-right: 0;
+}
+li.pricelist .price-info strong {
+  /*width: 100%;*/
+  font-size: 1em;
 }
 
 /* END CARMA */

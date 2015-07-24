@@ -1,7 +1,44 @@
 /* CARMA */
 
+a.home-left-btn, a.home-left-btn:active {
+	display:block;
+	width: auto;
+	padding: .5em;
+	border-radius: .25em;
+	-webkit-border-radius: .25em;
+	-moz-border-radius: .25em;
+	-o-border-radius: .25em;
+	background: $green;
+	margin: .25em auto;
+	border-bottom: 1px solid $dark-gray;
+	width: 50%;
+}
+
+a.home-left-btn:hover {
+	background:$light-yellow;
+	color: $dark-gray;
+}
+
+a.home-right-btn, a.home-right-btn:active {
+	display:block;
+	width: auto;
+	padding: .5em;
+	border-radius: .25em;
+	-webkit-border-radius: .25em;
+	-moz-border-radius: .25em;
+	-o-border-radius: .25em;
+	background: $orange;
+	margin: .25em auto;
+	border-bottom: 1px solid $dark-gray;
+	width: 50%;
+}
+
+a.home-right-btn:hover {
+	background:$light-yellow;
+	color: $dark-gray;
+}
+
 ul.container {
-	display: block;
 	@include fill-parent;
 	border: 1px solid #fff;
 	margin:0;
@@ -9,24 +46,29 @@ ul.container {
 }
 
 li.pricelist  {
-	@include span-columns(4);
-	padding: 10px 0 10px 0;
-	border-top: 1px solid #fff;
+	@include span-columns(12);
+	padding: 0;
+	border-bottom: 1px solid #fff;
 	list-style-type: none;
-	margin: 0 .83em 0 0;
+	margin: 0 .83em 1em 0;
 	line-height: 16px;
 	font-size: .65em;
+	.price-title {
+		@include span-columns(12);
+		font-weight: 500;
+		margin-top: .75em;
+		font-size: 1.25em;
+	}
+	.price-info {
+		@include span-columns(6);
+		padding: 5px 0 10px 0;
+		strong {
+			@include fill-parent;
+			font-size: 1em;
+		}
+	}
 }
 
-li.pricelist:last  {
-	@include span-columns(4);
-	padding: 10px 0 10px 0;
-	border-top: 1px solid #fff;
-	list-style-type: none;
-	margin: 0;
-	line-height: 16px;
-	font-size: .65em;
-}
 
 /* END CARMA */
 

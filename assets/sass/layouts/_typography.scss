@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 	float: none;
 	line-height: 1.25em;
 	margin-bottom: 20px;
-	text-transform: uppercase;
+	font-weight: 400;
 	a, a:visited {
 		text-decoration: none;
 
@@ -56,15 +56,15 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	@include fontSize(36px);
 	color: $white;
-	font-family: $title;
+	font-family: $header-font;
 }
 h2 {
 	@include fontSize(30px);
-	font-family: $title;
+	font-family: $header-font;
 }
 h3 {
 	@include fontSize(25px);
-	font-family: $title;
+	font-family: $header-font;
 }
 h4 {
 	@include fontSize(20px);
