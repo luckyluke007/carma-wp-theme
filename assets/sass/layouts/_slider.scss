@@ -16,3 +16,17 @@
 	margin: 0 auto 0 auto;
 }
 
+div.ms-slide-info.ms-dir-h.ms-align-bottom {
+	position: absolute !important;
+	z-index: 10000;
+	bottom: 32% !important;
+	padding: .5em;
+	display: block;
+	background: $magenta;
+	color: #fff;
+	width: auto;
+	font-family: $header-font;
+	font-size: 2.5em;
+	min-height: 0 !important;
+}
+

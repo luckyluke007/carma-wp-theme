@@ -15,10 +15,10 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<h1 class="page-title">
+			<header class="entry-header">
+				<h1 class="entry-title">
 					<?php
-					if (function_exists('get_the_archive_title')) :
+					if (function_exists(/*'get_the_archive_title'*/)) :
 						echo get_the_archive_title();
 
 						/*

@@ -177,6 +177,20 @@ if ( !function_exists('hometext_widgets_init') ) :
 	add_action( 'widgets_init', 'hometext_widgets_init' );
 endif;
 
+if ( !function_exists('digistarter_footer_right') ) :
+	function digistarter_footer_right() {
+		register_sidebar( array(
+			'name'          => __( 'footer-right', 'footer-right' ),
+			'id'            => 'footer-right',
+			'before_widget' => '<div id="%1$s" class="widget home-loss-box">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h4 class="widget-title">',
+			'after_title'   => '</h4>',
+		) );
+	}
+	add_action( 'widgets_init', 'digistarter_footer_right' );
+endif;
+
 
 /**
  * Initializing Flexnav Menu System
@@ -273,7 +287,8 @@ if ( !function_exists('digistarter_add_footer_divs') ) :
 
 		</div>
 		<div class="footer-right">
-			<?php echo esc_attr( get_theme_mod( 'digistarter_footer_right', 'Footer Content Right' ) );  ?>
+			<?php if ( ! dynamic_sidebar( 'footer-right' ) ) : ?>
+			<?php endif; ?> 
 		</div>
 <?php }
 add_action( 'tha_footer_bottom', 'digistarter_add_footer_divs' );
