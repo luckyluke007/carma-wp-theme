@@ -72,12 +72,14 @@ li.pricelist  {
 
 iframe {
 	width: 100% !important;
+	border:0;
 }
 
-li .cat-post-item {
+li.cat-post-item {
 	@include fill-parent;
-	list-style-type: none;
-	margin-bottom: 1em;
+	font-size: 1em !important;
+	line-height: 22px !important;
+	margin-bottom: 1em !important; 
 }
 /* END CARMA */
 

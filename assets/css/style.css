@@ -2100,12 +2100,14 @@ li.pricelist .price-info strong {
 
 iframe {
   width: 100% !important;
+  border: 0;
 }
 
-li .cat-post-item {
+li.cat-post-item {
   /*width: 100%;*/
-  list-style-type: none;
-  margin-bottom: 1em;
+  font-size: 1em !important;
+  line-height: 22px !important;
+  margin-bottom: 1em !important;
 }
 
 /* END CARMA */
