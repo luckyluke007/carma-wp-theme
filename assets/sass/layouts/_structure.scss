@@ -79,6 +79,7 @@ body {
 	background: $magenta;
 	padding-top: .35em;
 	margin: -7px 0 0 0;
+	bottom:0;
 	@include media($sm) {
 		position: none;
 	}

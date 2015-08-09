@@ -1173,6 +1173,7 @@ body {
   background: #de477c;
   padding-top: .35em;
   margin: -7px 0 0 0;
+  bottom: 0;
 }
 @media screen and (min-width: 200px) {
   .carma-magenta {
@@ -2285,7 +2286,7 @@ object {
 }
 @media screen and (min-width: 1088px) {
   .carma_slider {
-    height: 520px;
+    height: 600px;
   }
 }
 

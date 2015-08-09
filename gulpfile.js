@@ -190,7 +190,7 @@ gulp.task('copycss', function() {
 });
 
 gulp.task('copyjs', function() {
-   gulp.src('**/*.js')
+   gulp.src('**/*.js', '!node_modules/*.js')
    .pipe(gulp.dest('../carma/wp-content/themes/scg_studio/'));
 });
 gulp.task('copyimages', function() {
