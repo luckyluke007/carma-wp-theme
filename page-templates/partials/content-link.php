@@ -8,19 +8,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php tha_entry_top(); ?>
 	<header class="entry-header">
-		<?php if (has_post_format('link')): ?>
-			<?php
-				$content = get_the_content();
-				$linktoend = stristr($content, "http" );
-				$afterlink = stristr($linktoend, ">");
-				if ( ! strlen( $afterlink ) == 0 ):
-				$linkurl = substr($linktoend, 0, -(strlen($afterlink) + 1));
-				else:
-				$linkurl = $linktoend;
-				endif;
-			?>
-		<h2 class="blog-title"><a href="<?php echo $linkurl; ?>"><?php the_title(); ?></a></h2>
-		<?php endif; ?>
+		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
@@ -35,8 +23,19 @@
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
-	<!-- CONTENT -->
-		<?php the_post_thumbnail(); ?>
+		<?php
+			the_content( sprintf(
+				__( 'Continue reading%s &rarr;', 'digistarter' ),
+				'<span class="screen-reader-text">  '.get_the_title().'</span>'
+			)  );
+		?>
+
+		<?php
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . __( 'Pages:', 'digistarter' ),
+				'after'  => '</div>',
+			) );
+		?>
 	</div><!-- .entry-content -->
 	<?php endif; ?>
 
