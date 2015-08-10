@@ -22,7 +22,7 @@ get_header(); ?>
 		
 	</div>
 	<div id="social-media">
-		<a href="#" class="socialmedia facebook">Facebook</a><a href="#" class="socialmedia twitter">twitter</a><a href="#" class="socialmedia google">google</a>
+		<a href="https://www.facebook.com/pages/CARMA-Weight-Loss/194481884150?ref=br_rs" class="socialmedia facebook">Facebook</a><a href="https://www.youtube.com/channel/UC6RRZ5lD7LnCL-sWxeYI7eQ" class="socialmedia twitter">Youtube</a>
 			<!-- FOOTER -->
 		<?php get_footer(); ?>
 		<!-- END FOOTER -->	

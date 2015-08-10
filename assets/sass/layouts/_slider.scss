@@ -4,12 +4,7 @@
 	display:block;
 	width: 100%;
 	background: $light-yellow;
-	@include media($md) {
-		height: auto;
-	}
-	@include media($hg) {
-		height: 600px;
-	}
+	height: 100%;
 }
 .slider_container {
 	@include outer-container();

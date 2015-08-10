@@ -1192,7 +1192,7 @@ body {
 }
 @media screen and (min-width: 1088px) {
   .carma-magenta {
-    position: absolute;
+    position: none;
   }
 }
 .carma-magenta #social-media {
@@ -1298,11 +1298,13 @@ body {
 @media screen and (min-width: 860px) {
   .carma-magenta .carma-home-container .home-loss-box img {
     margin: 0 auto 0 auto;
+    position: relative;
   }
 }
 @media screen and (min-width: 1088px) {
   .carma-magenta .carma-home-container .home-loss-box img {
     margin: -2em auto 0 auto;
+    position: relative;
   }
 }
 
@@ -2278,16 +2280,7 @@ object {
   display: block;
   width: 100%;
   background: #FFF6BF;
-}
-@media screen and (min-width: 860px) {
-  .carma_slider {
-    height: auto;
-  }
-}
-@media screen and (min-width: 1088px) {
-  .carma_slider {
-    height: 600px;
-  }
+  height: 100%;
 }
 
 .slider_container {
