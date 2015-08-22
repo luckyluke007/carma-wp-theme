@@ -179,3 +179,22 @@ footer.entry-meta {
 	margin-bottom: 1em;
 }
 
+pre {
+	display: block;
+	@include span-columns(12);
+	background: $white;
+	color: $magenta;
+	padding: .5em;
+	border-radius:.25em;
+	-webkit-border-radius:.25em;
+	-moz-border-radius: .25em;
+	font-size: $base-font-size;
+	font-family: $sans-serif;
+}
+
+code {
+	display: block;
+	font-size: $base-font-size;
+	font-family: $sans-serif;
+	color: $magenta;
+}

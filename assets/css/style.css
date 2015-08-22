@@ -911,6 +911,32 @@ footer.entry-meta a:hover {
   margin-bottom: 1em;
 }
 
+pre {
+  display: block;
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 100%;
+  background: #fff;
+  color: #de477c;
+  padding: .5em;
+  border-radius: .25em;
+  -webkit-border-radius: .25em;
+  -moz-border-radius: .25em;
+  font-size: 1em;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+pre:last-child {
+  margin-right: 0;
+}
+
+code {
+  display: block;
+  font-size: 1em;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #de477c;
+}
+
 /*--------------------------------------------------------------
 5.0 Components/Add-ons
 --------------------------------------------------------------*/
@@ -1219,13 +1245,16 @@ body {
   background-position: -30px 0;
 }
 .carma-magenta #social-media .facebook {
-  background: url("http://carmaweightloss.net/carma_v2/wp-content/uploads/2015/07/facebook.svg") no-repeat;
+  background: url("http://carmaweightloss.net/wp-content/uploads/2015/07/facebook.svg") no-repeat;
 }
 .carma-magenta #social-media .google {
-  background: url("http://carmaweightloss.net/carma_v2/wp-content/uploads/2015/07/google-plus.svg") no-repeat;
+  background: url("http://carmaweightloss.net/wp-content/uploads/2015/07/google-plus.svg") no-repeat;
 }
 .carma-magenta #social-media .twitter {
-  background: url("http://carmaweightloss.net/carma_v2/wp-content/uploads/2015/07/twitter.svg") no-repeat;
+  background: url("http://carmaweightloss.net/wp-content/uploads/2015/07/twitter.svg") no-repeat;
+}
+.carma-magenta #social-media .youtube {
+  background: url("http://www.carmaweightloss.net/wp-content/uploads/2015/08/youtube.svg") no-repeat;
 }
 .carma-magenta .carma-home-container {
   display: block;
